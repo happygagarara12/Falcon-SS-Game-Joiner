@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  For Falcon SS Users
 // @author       unstable#8768
-// @match        https://web.roblox.com/games/*
+// @match        https://web.roblox.com/home
 // @grant        none
 // ==/UserScript==
 
