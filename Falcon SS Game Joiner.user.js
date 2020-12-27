@@ -1,27 +1,27 @@
 // ==UserScript==
 // @name         Falcon SS Game Joiner
-// @namespace    name?
+// @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  For Falcon SS Users
-// @author       unstable#8768
-// @match        https://web.roblox.com/home
+// @description  Falcon SS Game Joiner For Falcon SS Users
+// @author       ROBLOX: happy_gagarara12 Discord: unstable#8768
+// @match        https://web.roblox.com/*
 // @grant        none
 // ==/UserScript==
 
-function GetURLParameter(sParam){
-    var sPageURL = window.location.search.substring(1);
-    var sURLVariables = sPageURL.split("&");
-    for (const index = 0; index < sURLVariables.length; index++){
-        var sParameterName = sURLVariables[index].split("=");
-        if (sParameterName[0] == sParam){
-            return sParameterName[1];
-        }
-    }
-}
+function GetURLParameter(SearchParameter) {
+    const PageURL = window.location.search.substring(1);
+    const URLVariables = PageURL.split("&");
+    for (let index = 0; index < URLVariables.length; index++){
+        const ParameterName = URLVariables[index].split("=");
+        if (ParameterName[0] == SearchParameter){
+            return ParameterName[1];
+        };
+    };
+};
 
 function main(){
-    var PlaceId = GetURLParameter("placeid");
-    var JobId = GetURLParameter("jobid");
+    const PlaceId = GetURLParameter("placeid");
+    const JobId = GetURLParameter("jobid");
     if (PlaceId && JobId){
         Roblox.GameLauncher.joinGameInstance(PlaceId, JobId);
     }
