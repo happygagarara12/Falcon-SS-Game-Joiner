@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Falcon SS Game Joiner
 // @namespace    http://tampermonkey.net/
-// @version      4.0
+// @version      4
 // @description  Falcon SS Game Joiner For Falcon SS Users
 // @author       ROBLOX: happy_gagarara12 Discord: unstable#8768
 // @match        https://*.roblox.com/home*
