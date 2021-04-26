@@ -4,7 +4,7 @@
 // @version      4.0
 // @description  Falcon SS Game Joiner For Falcon SS Users
 // @author       ROBLOX: happy_gagarara12 Discord: unstable#8768
-// @match        https://roblox.com/home*
+// @match        https://*.roblox.com/home*
 // @grant        none
 // ==/UserScript==
 
